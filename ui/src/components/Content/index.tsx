@@ -160,7 +160,7 @@ const Content = (props: any) => {
       }
     }
     // 如果按了数字键 + ctrl/meta，打开对应的卡片
-    if (ev.ctrlKey || ev.metaKey) {
+    if (ev.ctrlKey || ev.metaKey || ev.altKey) {
       const num = Number(ev.key);
       if (isNaN(num)) return;
       ev.preventDefault()
